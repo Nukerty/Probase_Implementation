@@ -1,0 +1,7 @@
+// the configured options and settings for Probase Implementation
+#define Probase_Clone_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Probase_Clone_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+#cmakedefine USE_MYMATH
+#cmakedefine INSTALL_TO_DIR
+#cmakedefine TEST_TARGETS
