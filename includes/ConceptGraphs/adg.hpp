@@ -65,6 +65,8 @@ namespace adg {
 
     ~TargettedGraph() {}
 
+    unsigned int ReturnID () { return TGraphID; }
+
   };
 
 
