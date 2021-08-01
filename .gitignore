@@ -1,6 +1,7 @@
 # Build directory
 build/**
 Debug/**
+.vs/**
 
 # Prerequisites
 *.d

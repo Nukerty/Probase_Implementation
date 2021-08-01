@@ -3,6 +3,7 @@
 namespace adg {
 
   void Concept::AddSubConcept(Concept *ChildConcept) {
+    
     this->ChildConcepts.push_back(ChildConcept);
   
     // Changing the NodeIndicatorTypes accordingly
@@ -15,6 +16,9 @@ namespace adg {
       ChildConcept->Type = adg::NodeTypeIndicator::LeafNode;
     else if (ChildConcept->Type == adg::NodeTypeIndicator::RootNode)
       ChildConcept->Type = adg::NodeTypeIndicator::ParentNode;
+
+    this->ChildConcepts.push_back(ChildConcept);
+    
   }
   
   
@@ -31,6 +35,8 @@ namespace adg {
       ParentConcept->Type = adg::NodeTypeIndicator::RootNode;
     else if (ParentConcept->Type == adg::NodeTypeIndicator::LeafNode)
       ParentConcept->Type = adg::NodeTypeIndicator::ParentNode;
+
+    ParentConcept->ChildConcepts.push_back(this);
   };
 
   std::vector<Concept*> returnBaseConcepts (TargettedGraph T) {
