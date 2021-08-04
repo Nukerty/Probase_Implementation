@@ -1,0 +1,11 @@
+TreeName
+
+Concepts = ["Blood", "Body part", "Relation"]
+
+ConceptTitle : "Blood"
+ConceptChild : ["Body part","Relation"]
+NodeTypeIndicator : 1
+
+ConceptTitle : ""
+ConceptChild : 
+NodeTypeIndicat
