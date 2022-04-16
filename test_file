@@ -6,6 +6,10 @@ ConceptTitle : "Blood"
 ConceptChild : ["Body part","Relation"]
 NodeTypeIndicator : 1
 
-ConceptTitle : ""
-ConceptChild : 
-NodeTypeIndicat
+ConceptTitle : "Body part"
+ConceptChild : []
+NodeTypeIndicator : 0
+
+ConceptTitle " "Relation"
+ConceptChild : []
+NodeTypeIndicator : 0

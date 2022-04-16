@@ -11,7 +11,6 @@ namespace StreamHandler {
    * Handling TargettedGraph object conversion from file and back using the 
    * StreamHandler::FileHandler class
    */
-  std::fstream fpoint;
 
   class FileHandler {
     
@@ -22,6 +21,9 @@ namespace StreamHandler {
 
     adg::TargettedGraph ExtractTree (std::fstream fs, std::string filename);
     void SaveTree(adg::TargettedGraph);
+
+    private:
+    std::fstream fpoint;
 
   };
 

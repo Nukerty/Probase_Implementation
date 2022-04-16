@@ -2,6 +2,13 @@
 
 namespace adg {
 
+  /*
+   * @brief 	Adds a Sub Concept to the graph
+   *
+   * @details Adds the Concept to the ChildConcepts vector 
+   *          and changes the node type accordingly
+   * @param[in] ChildConcept Pointer to Concept type
+   */
   void Concept::AddSubConcept(Concept *ChildConcept) {
     
     this->ChildConcepts.push_back(ChildConcept);
@@ -59,7 +66,8 @@ namespace adg {
   }
 
   void emptyConcept(std::vector<Concept*> &ConceptQueue) {
-    ConceptQueue.empty(); }
+    ConceptQueue.empty(); 
+  }
   
   void popConcept(std::vector<Concept*> &ConceptQueue) {
     ConceptQueue.pop_back(); }

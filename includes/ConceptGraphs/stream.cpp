@@ -17,10 +17,20 @@ adg::TargettedGraph StreamHandler::FileHandler::ExtractTree(std::fstream fs,std:
     std::cout<<"Cannot open file : "<<filename<<"\n";
     exit(1);
   }
-  else {
-    std::cout<<"Opening file : "<<filename<<"\n";
-    
+  
+  // Otherwise extract from file
+  std::cout<<"Opening file : "<<filename<<"\n";
+  std::string line;
+  std::string data;
+  while (getline(fs,line)) {
+    data += line + '\n';
   }
+
+  fs.close();
   
-  
+  return Tree;
+
 };
+  
+
+

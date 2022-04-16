@@ -1,14 +1,24 @@
+/**
+ *  @file   adg.hpp
+ *  @brief  Acyclic Directed Graph Handler
+ *  @author nkb
+ *  @date   2020-08-20
+ ***********************************************/
+
 #pragma once
+// Might be better to include guards
 
 #include <vector>
 #include <string>
 
 namespace adg {
 
-  /*inline namespace ID_keeper{
-    std::vector<unsigned int> TGraphID {0};
-    std::vector<unsigned int> ConceptIDNumber {0};
-  };*/
+  /* 
+   * inline namespace ID_keeper{
+   *  std::vector<unsigned int> TGraphID {0};
+   *  std::vector<unsigned int> ConceptIDNumber {0};
+   * };
+  */
 
 
   enum NodeTypeIndicator : int {RootNode, ParentNode, LeafNode, None};
@@ -19,8 +29,8 @@ namespace adg {
    */
   class Concept
   {
-    /*private :
-      unsigned int ConceptID;*/
+    private :
+      unsigned int ConceptID;
     public:
     std::string ConceptTitle;
     std::vector<Concept*> ChildConcepts;
@@ -59,13 +69,15 @@ namespace adg {
     
     TargettedGraph (std::string GraphName) {
       TargettedGraph::GraphName = GraphName;
-      /*ID_keeper::TGraphID.push_back( ID_keeper::TGraphID.back() + 1 );
-      TargettedGraph::TGraphID = ID_keeper::TGraphID.back();*/
+      /*
+       * ID_keeper::TGraphID.push_back( ID_keeper::TGraphID.back() + 1 );
+       * TargettedGraph::TGraphID = ID_keeper::TGraphID.back();
+       */
     };
 
     ~TargettedGraph() {}
 
-    /*unsigned int ReturnID () { return TGraphID; }*/
+    // unsigned int ReturnID () { return TGraphID; }
 
   };
 

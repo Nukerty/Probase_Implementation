@@ -18,6 +18,11 @@ namespace ss = syntactic_segmentation;
 
 int main() {
 
+  std::cout<<"Prog here"<<'\n';
+  adg::NodeTypeIndicator num = adg::NodeTypeIndicator::LeafNode;
+  std::cout << num << '\n';
+
+  // run_tests();
   adg::TargettedGraph Tree("Test_concept");
 
   std::cout<<"TargettedGraphName : "<< Tree.GraphName

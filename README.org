@@ -1,0 +1,13 @@
+* Probase_Implementation
+
+Creating a viable C++-port of the NPN package that I made for python with nltk and little spacy
+
+** Notes
+
+- It might be a good idea to use the [https://www.qcustomplot.com/]
+
+- Maybe good to use one of these
+  
+  - [[https://github.com/ocornut/imgui]]
+  - [[https://github.com/d3/d3-force]]
+
